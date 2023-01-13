@@ -1,0 +1,36 @@
+#nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-inline: 3%;
+    padding-block: 1.1%;
+    background-color: rgb(61, 43, 85);
+    margin-bottom: 2%;
+}
+
+#nav > form > input {
+    margin-right: 10px;
+    font-size: 19px;
+    transition: 0.4s;
+    padding: 2px;
+    border: 3px solid black;
+}
+
+#nav > form > input:focus {
+    background-color: #dd7928;
+    border: none;
+}
+
+#nav > form > button {
+    font-size: 19px;
+    background-color: #dd7928;
+    border: none;
+    padding: 4px;
+    border-radius: 2%;
+    cursor: pointer;
+}
+
+#nav > form > button:hover {
+    transition: 0.5s all;
+    background-color: orange;
+}

@@ -1,0 +1,13 @@
+.filmesContainer {
+    display: grid;
+    grid-template-columns: 370px 370px 370px 370px;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#tit {
+    text-align: center;
+    color: white;
+    margin-bottom: 1em;
+}

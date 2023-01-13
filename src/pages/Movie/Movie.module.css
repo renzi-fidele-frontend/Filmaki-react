@@ -1,0 +1,39 @@
+#container {
+    text-align: center;
+    color: white;
+    
+}
+
+#container > h3 {
+    margin-top: 1em;
+    margin-bottom: .2em;
+    font-size: 2em;
+    color: orange;
+}
+
+#rating {
+    margin-bottom: .8em;
+}
+
+#esquerda {
+    text-align: left;
+    padding-inline: 60vh;
+    padding-bottom: 2em;
+}
+
+#tagline {
+    font-size: 19px;
+    margin-bottom: 2em;
+}
+
+.bloco {
+    margin-bottom: 1.7em;
+}
+
+.bloco > p {
+    font-weight: 600;
+    font-size: 19px;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
