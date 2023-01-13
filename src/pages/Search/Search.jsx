@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import styles from "./Search.module.css";
 import MovieCard from "../../Components/MovieCard/MovieCard";
+import {} from "react-icons"
 
 const urlSearch = import.meta.env.VITE_SEARCH;
 const apikey = import.meta.env.VITE_API_KEY;

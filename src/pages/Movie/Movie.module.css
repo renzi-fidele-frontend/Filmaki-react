@@ -37,3 +37,62 @@
     margin-bottom: 8px;
 }
 
+@media screen and (max-width: 1600px) {
+    #esquerda {
+        padding-inline: 55vh;
+    }
+    
+}
+
+@media screen and (max-width: 1435px) {
+    #esquerda {
+        padding-inline: 50vh;
+    }   
+}
+
+@media screen and (max-width: 1377px) {
+    #esquerda {
+        padding-inline: 45vh;
+    }   
+}
+
+@media screen and (max-width: 1229px) {
+    #esquerda {
+        padding-inline: 40vh;
+    }   
+}
+
+@media screen and (max-width: 1103px) {
+    #esquerda {
+        padding-inline: 35vh;
+    }   
+}
+
+@media screen and (max-width: 963px) {
+    #esquerda {
+        padding-inline: 30vh;
+    }   
+}
+
+@media screen and (max-width: 865px) {
+    #esquerda {
+        padding-inline: 20vh;
+    }   
+}
+
+@media screen and (max-width: 753px) {
+    #esquerda {
+        padding-inline: 15vh;
+    }   
+}
+
+@media screen and (max-width: 600px) {
+    #esquerda {
+        padding-inline: 3vh;
+    }   
+
+    #img {
+        width: 350px;
+    }
+
+}
