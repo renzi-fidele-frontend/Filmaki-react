@@ -34,3 +34,11 @@
     transition: 0.5s all;
     background-color: orange;
 }
+
+@media screen and (max-width: 457px) {
+    #nav {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
