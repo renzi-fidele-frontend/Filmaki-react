@@ -2,6 +2,14 @@
     color: whitesmoke;
 }
 
+#container > h1 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-weight: 600;
+    font-size: 32px;
+    font-size: italic;
+}
+
 #topFilmesContainer {
     display: grid;
     grid-template-columns: 370px 370px 370px 370px;
@@ -10,4 +18,31 @@
     margin: 0 auto;
 }
 
+@media screen and (max-width: 1500px) {
+    #topFilmesContainer {
+        grid-template-columns: 370px 370px 370px;
+    }
+}
 
+@media screen and (max-width: 1100px) {
+    #topFilmesContainer {
+        grid-template-columns: 370px 370px;
+    }
+
+    #topFilmesContainer > div {
+        margin-inline: 1em;
+    }
+}
+
+@media screen and (max-width: 748px) {
+    #topFilmesContainer {
+        grid-template-columns: auto;
+        margin-inline: 0;
+        margin: 0 auto;
+    }
+    #container > h1 {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+}

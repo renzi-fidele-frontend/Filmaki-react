@@ -25,7 +25,7 @@ function Home() {
 
     return (
         <section id={styles.container}>
-            <h1 style={{ textAlign: "center", marginBottom: "1em", fontWeight: "600", fontSize: "32px", fontStyle: "italic" }}>
+            <h1>
                 Veja as tendências no mundo do cinema
             </h1>
             {/*Caso tenho algum filme no array */}
