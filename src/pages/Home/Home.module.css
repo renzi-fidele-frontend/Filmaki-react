@@ -36,7 +36,7 @@
 
 @media screen and (max-width: 748px) {
     #topFilmesContainer {
-        grid-template-columns: auto;
+        grid-template-columns: 380px;
         margin-inline: 0;
         margin: 0 auto;
     }
