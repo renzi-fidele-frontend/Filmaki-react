@@ -44,9 +44,10 @@ function Movie() {
                 <motion.img
                     id={styles.img}
                     src={img_url + movie.poster_path}
+                    whileHover={{filter: "grayscale(100%)"}}
                     alt={movie.title}
                     initial={{ x: "-100vh", opacity: 0 }}
-                    transition={{ duration: 1, delay: 0.5 }}
+                    transition={{ duration: 1, delay: 0.3 }}
                     animate={{ x: 0, opacity: 1 }}
                 />
                 <h3>{movie.title}</h3>
