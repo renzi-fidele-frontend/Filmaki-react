@@ -23,7 +23,6 @@ function Search() {
             .then((r) => setResultadosPesquisa(r.results))
             .catch((err) => {
                 setErroPesquisa(true);
-                console.log(`Ops, aconteceu o erro: ${err}`);
                 setTimeout(() => {
                     setErroPesquisa(false);
                 }, 6000);
