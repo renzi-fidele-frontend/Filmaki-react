@@ -13,13 +13,21 @@ function Search() {
 
     const [resultadosPesquisa, setResultadosPesquisa] = useState([]);
 
+    const [erroPesquisa, setErroPesquisa] = useState(false);
+
     //  Apanhando os resultados da pesquisa
     async function apanhar() {
         setResultadosPesquisa([]);
         const data = await fetch(`${urlSearch}?query=${q.get("q")}&language=pt-BR&api_key=${apikey}`)
             .then((rsp) => rsp.json())
             .then((r) => setResultadosPesquisa(r.results))
-            .catch((err) => console.log(`Ops, aconteceu o erro: ${err}`));
+            .catch((err) => {
+                setErroPesquisa(true);
+                console.log(`Ops, aconteceu o erro: ${err}`);
+                setTimeout(() => {
+                    setErroPesquisa(false);
+                }, 3000);
+            });
     }
 
     useEffect(() => {
@@ -43,6 +51,9 @@ function Search() {
                     })}
                 </div>
             )}
+
+            {/*Caso haja erro do servidor ao se fazer uma pesquisa */}
+            {erroPesquisa === true ? <p style={{ color: "red", fontSize: "20px" }}>Por favor desative a segurança do navegador</p> : undefined}
         </section>
     );
 }
