@@ -26,7 +26,7 @@ function Search() {
                 console.log(`Ops, aconteceu o erro: ${err}`);
                 setTimeout(() => {
                     setErroPesquisa(false);
-                }, 3000);
+                }, 6000);
             });
     }
 
@@ -53,7 +53,7 @@ function Search() {
             )}
 
             {/*Caso haja erro do servidor ao se fazer uma pesquisa */}
-            {erroPesquisa === true ? <p style={{ color: "red", fontSize: "20px" }}>Por favor desative a segurança do navegador</p> : undefined}
+            {erroPesquisa === true ? <p style={{ color: "red", fontSize: "20px" }}>Por favor desative a segurança do navegador!</p> : undefined}
         </section>
     );
 }
