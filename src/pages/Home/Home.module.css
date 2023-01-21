@@ -1,5 +1,6 @@
 #container {
     color: whitesmoke;
+    text-align: center;
 }
 
 #container > h1 {
@@ -16,6 +17,25 @@
     text-align: center;
     width: fit-content;
     margin: 0 auto;
+}
+
+#ico {
+    font-size: 40px;
+    color: #dd7928;
+    margin: 0 auto;
+}
+
+#ico {
+    animation: spin infinite 1s linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @media screen and (max-width: 1500px) {

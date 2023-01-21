@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import styles from "./Home.module.css";
 import { MdDownloading } from "react-icons/md";
 import MovieCard from "../../Components/MovieCard/MovieCard.jsx";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 //  Pegando os dados da API no ambiente do vite
 const apiUrl = import.meta.env.VITE_API;
@@ -24,13 +26,13 @@ function Home() {
     }, []);
 
     return (
-        <section id={styles.container}>
+        <motion.section id={styles.container} initial={{x: "-100vh"}} animate={{x: 0}} transition={{duration: 1}}>
             <h1>
                 Veja as tendências no mundo do cinema
             </h1>
             {/*Caso tenho algum filme no array */}
             {topFilmes.length === 0 ? (
-                <MdDownloading />
+                <AiOutlineLoading3Quarters id={styles.ico} />
             ) : (
                 <div id={styles.topFilmesContainer}>
                     {topFilmes.map((obj) => {
@@ -38,7 +40,7 @@ function Home() {
                     })}
                 </div>
             )}
-        </section>
+        </motion.section>
     );
 }
 
