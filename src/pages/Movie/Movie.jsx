@@ -34,13 +34,11 @@ function Movie() {
 
     useEffect(() => {
         apanhar();
-        console.log(movie);
     }, [id]);
 
     //  Caso chegue a informação do filme vindo da api
     if (Object.keys(movie).length > 0) {
         return (
-            
             <section id={styles.container}>
                 <motion.img
                     id={styles.img}

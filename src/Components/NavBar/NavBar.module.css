@@ -59,3 +59,26 @@
         align-items: center;
     }
 }
+
+@media screen and (max-width: 621px) {
+    #nav {
+        flex-flow: column;
+        padding-bottom: 10px;
+    }
+
+    #flex {
+        flex-flow: column wrap;
+    }
+
+    #flex > h1 {
+        border-right: none;
+        border-bottom: #dd7928 dotted 1px;
+    }
+
+    #flex > a {
+        margin-block: 5px;
+    }
+
+
+
+}

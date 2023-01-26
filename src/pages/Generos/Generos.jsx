@@ -11,7 +11,6 @@ const generoUrl = import.meta.env.VITE_GENDER_URL;
 const Generos = () => {
     const [categorias, setCategorias] = useState([]);
     const navegar = useNavigate();
-    
 
     async function apanharCategorias(url) {
         const res = await fetch(url)
@@ -31,7 +30,7 @@ const Generos = () => {
 
             <div id={styles.CategoriasContainer}>
                 {/*Caso hajam categorias a se mostrar */}
-                {categorias.length > 0 ? (
+                {categorias.length > 0 &&
                     categorias.map((val, key) => {
                         return (
                             <p
@@ -42,11 +41,9 @@ const Generos = () => {
                                 {val.name}
                             </p>
                         );
-                    })
-                ) : (
-                    <AiOutlineLoading3Quarters id={estilo.ico} />
-                )}
+                    })}
             </div>
+            {categorias.length === 0 && <AiOutlineLoading3Quarters id={estilo.ico} />}
         </section>
     );
 };
