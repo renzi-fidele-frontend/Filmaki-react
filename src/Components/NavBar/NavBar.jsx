@@ -9,11 +9,14 @@ function NavBar() {
 
     return (
         <nav id={styles.nav}>
-            <h1 style={{ letterSpacing: "3px", fontWeight: "900" }}>
-                <Link to="/">
-                    <FaCameraRetro /> FilmeLib
-                </Link>
-            </h1>
+            <div id={styles.flex}>
+                <h1 style={{ letterSpacing: "3px", fontWeight: "900" }}>
+                    <Link to="/">
+                        <FaCameraRetro /> FilmeLib
+                    </Link>
+                </h1>
+                <Link to="/generos">Categorias</Link>
+            </div>
             <form
                 onSubmit={(e) => {
                     e.preventDefault();

@@ -35,7 +35,7 @@ function Home() {
                 <AiOutlineLoading3Quarters id={styles.ico} />
             ) : (
                 <div id={styles.topFilmesContainer}>
-                    {topFilmes.map((obj) => {
+                    {topFilmes.map((obj, key) => {
                         return <MovieCard movie={obj} />;
                     })}
                 </div>

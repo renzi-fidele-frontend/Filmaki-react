@@ -8,6 +8,23 @@
     margin-bottom: 2%;
 }
 
+#flex {
+    display: flex;
+    align-items: center;
+}
+
+#flex > h1 {
+    margin-right: 10px;
+    padding-right: 8px;
+    border-right: 1px solid #dd7928;
+}
+
+#flex > a {
+    font-weight: 500;
+    font-size: 18px;
+    color: #d3b39d;
+}
+
 #nav > form > input {
     margin-right: 10px;
     font-size: 19px;

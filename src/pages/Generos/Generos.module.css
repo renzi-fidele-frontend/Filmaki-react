@@ -1,0 +1,33 @@
+#container > h3 {
+    color: white;
+    font-size: 2em;    
+}
+
+#CategoriasContainer { 
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+
+#CategoriasContainer p {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #514a74;
+    margin-inline: 1em;
+    border-radius: 2%;
+}
+
+#CategoriasContainer p {
+    font-size: 19px;
+    color: white;
+    transition: .3s ease-in-out all;
+}
+
+#CategoriasContainer p:hover {
+    background-color: #312472;
+    cursor: pointer;
+}
+

@@ -37,9 +37,10 @@ function Movie() {
         console.log(movie);
     }, [id]);
 
+    //  Caso chegue a informação do filme vindo da api
     if (Object.keys(movie).length > 0) {
         return (
-            //  Caso chegue a informação do filme vindo da api
+            
             <section id={styles.container}>
                 <motion.img
                     id={styles.img}
@@ -47,7 +48,7 @@ function Movie() {
                     whileHover={{filter: "grayscale(100%)"}}
                     alt={movie.title}
                     initial={{ x: "-100vh", opacity: 0 }}
-                    transition={{ duration: 1, delay: 0.3 }}
+                    transition={{ duration: 1 }}
                     animate={{ x: 0, opacity: 1 }}
                 />
                 <h3>{movie.title}</h3>
@@ -89,7 +90,7 @@ function Movie() {
             </section>
         );
     } else {
-        return (<AiOutlineLoading3Quarters id={estilo.ico} />);
+        return <AiOutlineLoading3Quarters id={estilo.ico} />
     }
 }
 
