@@ -19,6 +19,17 @@
     border-right: 1px solid #dd7928;
 }
 
+#flex > h1 > a {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+#flex > h1 > a > svg{
+    margin-right: 9px;
+}
+
+
 #flex > a {
     font-weight: 500;
     font-size: 18px;
@@ -78,7 +89,4 @@
     #flex > a {
         margin-block: 5px;
     }
-
-
-
 }
