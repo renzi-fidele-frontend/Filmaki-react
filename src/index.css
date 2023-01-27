@@ -7,6 +7,7 @@
 
 body {
   background-color: rgb(25, 15, 39);
+  min-height: 100vh;
 }
 
 a {
