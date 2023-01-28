@@ -1,18 +1,17 @@
 #container {
     text-align: center;
     color: white;
-    
 }
 
 #container > h3 {
     margin-top: 1em;
-    margin-bottom: .2em;
+    margin-bottom: 0.2em;
     font-size: 2em;
     color: orange;
 }
 
 #rating {
-    margin-bottom: .8em;
+    margin-bottom: 0.8em;
 }
 
 #esquerda {
@@ -41,58 +40,56 @@
     #esquerda {
         padding-inline: 55vh;
     }
-    
 }
 
 @media screen and (max-width: 1435px) {
     #esquerda {
         padding-inline: 50vh;
-    }   
+    }
 }
 
 @media screen and (max-width: 1377px) {
     #esquerda {
         padding-inline: 45vh;
-    }   
+    }
 }
 
 @media screen and (max-width: 1229px) {
     #esquerda {
         padding-inline: 40vh;
-    }   
+    }
 }
 
 @media screen and (max-width: 1103px) {
     #esquerda {
         padding-inline: 35vh;
-    }   
+    }
 }
 
 @media screen and (max-width: 963px) {
     #esquerda {
         padding-inline: 30vh;
-    }   
+    }
 }
 
 @media screen and (max-width: 865px) {
     #esquerda {
         padding-inline: 20vh;
-    }   
+    }
 }
 
 @media screen and (max-width: 753px) {
     #esquerda {
         padding-inline: 15vh;
-    }   
+    }
 }
 
 @media screen and (max-width: 600px) {
     #esquerda {
         padding-inline: 3vh;
-    }   
+    }
 
     #img {
         width: 350px;
     }
-
 }

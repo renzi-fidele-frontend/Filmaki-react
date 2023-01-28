@@ -9,7 +9,7 @@ const img_url = import.meta.env.VITE_IMG;
 function MovieCard({ movie, mostrarLink = true }) {
     return (
         <div id={styles.cardContainer}>
-            <motion.img src={img_url + movie.poster_path} alt={movie.title} whileHover={{filter: "grayscale(100%)"}} />
+            <motion.img src={img_url + movie.poster_path} alt={movie.title} whileHover={{ filter: "grayscale(100%)" }} />
             <h2>{movie.title}</h2>
             <p>
                 {<ImStarFull color="yellow" />}

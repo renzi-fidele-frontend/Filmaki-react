@@ -14,15 +14,15 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
         <BrowserRouter>
             <Routes>
-                <Route element={<App/>}>
+                <Route element={<App />}>
                     <Route exact path="/" element={<Home />} />
                     <Route path="filme/:id" element={<Movie />} />
                     <Route path="pesquisa" element={<Search />} />
-                    <Route path="generos" element={<Generos/>}/>
-                    <Route path="generos/:id" element={<Genero/>}/> 
+                    <Route path="generos" element={<Generos />} />
+                    <Route path="generos/:id" element={<Genero />} />
                     {/*Rota para tratar o erro 404 */}
-                    <Route path="*" element={<NotFound/>} />
-                </Route>   
+                    <Route path="*" element={<NotFound />} />
+                </Route>
             </Routes>
         </BrowserRouter>
     </React.StrictMode>

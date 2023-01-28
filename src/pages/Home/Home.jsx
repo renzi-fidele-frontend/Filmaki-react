@@ -26,10 +26,8 @@ function Home() {
     }, []);
 
     return (
-        <motion.section id={styles.container} initial={{x: "-100vh"}} animate={{x: 0}} transition={{duration: 1}}>
-            <h1>
-                Veja as tendências no mundo do cinema
-            </h1>
+        <motion.section id={styles.container} initial={{ x: "-100vh" }} animate={{ x: 0 }} transition={{ duration: 1 }}>
+            <h1>Veja as tendências no mundo do cinema</h1>
             {/*Caso tenho algum filme no array */}
             {topFilmes.length === 0 ? (
                 <AiOutlineLoading3Quarters id={styles.ico} />

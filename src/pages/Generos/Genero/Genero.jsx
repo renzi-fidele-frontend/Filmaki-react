@@ -35,7 +35,7 @@ const Genero = () => {
             ) : (
                 <div id={estilo.topFilmesContainer}>
                     {resultados.map((obj, key) => {
-                        return <MovieCard movie={obj} mostrarLink={false}/>;
+                        return <MovieCard movie={obj} mostrarLink={false} />;
                     })}
                 </div>
             )}

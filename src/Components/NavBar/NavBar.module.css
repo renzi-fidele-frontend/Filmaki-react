@@ -25,10 +25,9 @@
     align-items: center;
 }
 
-#flex > h1 > a > svg{
+#flex > h1 > a > svg {
     margin-right: 9px;
 }
-
 
 #flex > a {
     font-weight: 500;

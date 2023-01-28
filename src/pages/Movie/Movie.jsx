@@ -43,7 +43,7 @@ function Movie() {
                 <motion.img
                     id={styles.img}
                     src={img_url + movie.poster_path}
-                    whileHover={{filter: "grayscale(100%)"}}
+                    whileHover={{ filter: "grayscale(100%)" }}
                     alt={movie.title}
                     initial={{ x: "-100vh", opacity: 0 }}
                     transition={{ duration: 1 }}
@@ -88,7 +88,7 @@ function Movie() {
             </section>
         );
     } else {
-        return <AiOutlineLoading3Quarters id={estilo.ico} />
+        return <AiOutlineLoading3Quarters id={estilo.ico} />;
     }
 }
 
