@@ -1,0 +1,31 @@
+#container {
+    color: white;
+}
+
+#container > img {
+    width: 400px;
+    height: auto;
+    margin-bottom: 2em;
+
+}
+
+#container > h4 {
+    font-size: 20px;
+}
+
+#container > P {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 530px) {
+    #container > img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 328px) {
+    #container > img {
+        width: 250px;
+    }
+}
+

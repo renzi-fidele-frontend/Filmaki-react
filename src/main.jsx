@@ -8,6 +8,7 @@ import Search from "./pages/Search/Search";
 import Home from "./pages/Home/Home";
 import Generos from "./pages/Generos/Generos";
 import Genero from "./pages/Generos/Genero/Genero";
+import NotFound from "./pages/NotFound/NotFound";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -19,6 +20,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                     <Route path="pesquisa" element={<Search />} />
                     <Route path="generos" element={<Generos/>}/>
                     <Route path="generos/:id" element={<Genero/>}/> 
+                    {/*Rota para tratar o erro 404 */}
+                    <Route path="*" element={<NotFound/>} />
                 </Route>   
             </Routes>
         </BrowserRouter>
