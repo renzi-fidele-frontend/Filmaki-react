@@ -20,8 +20,12 @@ function Search() {
         setResultadosPesquisa([]);
         const data = await fetch(`${urlSearch}?query=${q.get("q")}&language=pt-BR&api_key=${apikey}`)
             .then((rsp) => rsp.json())
-            .then((r) => setResultadosPesquisa(r.results))
+            .then((r) => {
+                console.log(r);
+                setResultadosPesquisa(r.results);
+            })
             .catch((err) => {
+                console.log(`ops, aconteceu erro de pesquina: ${err}`);
                 setErroPesquisa(true);
                 setTimeout(() => {
                     setErroPesquisa(false);
