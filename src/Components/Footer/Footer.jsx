@@ -8,7 +8,7 @@ const Footer = () => {
             </p>
             <div>
                 <p>Desenvolvedor: </p>
-                <a href="https://anovafase.com/renzi-fidele">Renzi Fidele</a>
+                <a href="https://portfolio-renzi.vercel.app">Renzi Fidele</a>
             </div>
         </footer>
     );
